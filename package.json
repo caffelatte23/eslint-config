@@ -1,0 +1,28 @@
+{
+  "name": "@caffelatte23/eslint-config",
+  "description": "caffelatte's eslint config",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "bun run src/build.ts"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0",
+    "eslint": "^9.19.0"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.19.0",
+    "eslint-config-flat-gitignore": "^2.0.0",
+    "typescript-eslint": "^8.23.0"
+  }
+}
